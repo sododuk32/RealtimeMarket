@@ -29,9 +29,9 @@ export const useMainList = <T>(
         }
 
         const response = await fetch(url, {
-          method: 'GET', // 메서드를 POST로 설정
+          method: 'GET', // 추후 모든 메서드 모든 option 타입 추가
           headers,
-          body: null, // POST 요청의 body 설정
+          body: null,
         });
 
         if (!response.ok) {
